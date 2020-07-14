@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 's5it4rcx_-wu&cb=0p&7p8cw919q%-^6#z^yazxm-kl-68o*+n'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -52,8 +52,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'apache_log.urls'
 
-FILES_DIR = BASE_DIR+'/files'
-
+FILES_DIR = os.path.join(BASE_DIR, 'files')
 
 TEMPLATES_DIR = os.path.join(BASE_DIR, "templates")
 
